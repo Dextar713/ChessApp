@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block navbar %}
+    {{ super() }}
+{% endblock %}
+
+{% block flash %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+<section id="game_choice">
+    <h1>Select Game Mode</h1>
+        <div class="game_modes">
+            {% for mode in modes %}
+            <div>
+                <a href="{{url_for('chess_game_bp.start_game', minutes=mode[0], extra=mode[1])}}">
+                    <button>{{mode[0]}} + {{mode[1]}}</button>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+</section>
+{% endblock %}

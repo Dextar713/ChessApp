@@ -1,0 +1,161 @@
+#mynav li a {
+    color: white;
+    font-size: 16px;
+}
+
+body {
+    background-color: #279EFF;
+}
+
+.game_modes {
+    display: flex;
+    background-color: #279EFF;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#game_choice {
+    margin-top: 100px;
+    background-color: #279EFF;
+}
+
+#game_choice h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.game_modes > div {
+    padding: 10px;
+    width: fit-content;
+}
+
+.game_modes a button{
+    width: 200px;
+    height: 130px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Arial';
+    text-align: center;
+    background-color: #068FFF;
+    border-radius: 20%;
+    margin: 0;
+    box-shadow: 5px 5px 5px 5px blue;
+}
+/*
+td.field {
+    height: min(5vw, 9vh);
+    width: min(5vw, 9vh);
+}
+*/
+td.white {
+    background-color: white;
+} 
+
+td.black {
+    background-color: burlywood;
+} 
+
+#game {
+    margin-top: 70px;
+}
+
+#game > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#game > div > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 3vh;
+    font-family: 'Arial';
+    color: white;
+}
+
+#game .timer {
+    margin-left: 50px;
+}
+
+
+
+.timer_up > div, .timer_down > div{
+    width: 20vh;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+
+#game .timer .timer_up > div > h2 {
+    color: white;
+    font-size: 5vh;
+}
+
+#game .timer .timer_up > div {
+    background-color: black;
+}
+
+#game .timer .timer_down > div {
+    background-color: lightgray;
+}
+
+#game .timer .timer_down > div > h2 {
+    color: black;
+    font-size: 5vh;
+}
+
+.timer_field {
+    width: 20vh;
+    height: 28vh;
+}
+
+.figure {
+    border: 0;
+    background: rgba(0, 0, 0, 0);
+}
+
+
+#log > form > div {
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    padding: 50px;
+    font-size: 3vh;
+    color: white;
+}
+
+#flash {
+    margin-top: 70px;
+}
+
+#flash > div {
+    width: 500px;
+    height: 30px;
+    margin: auto;
+}
+
+#flash > div > ul {
+    list-style: none;
+    color: white;
+    font-size: 3vh;
+}
+
+.timer_field .res ul {
+    list-style: none;
+    color: white;
+    font-size: 7vh;
+}
