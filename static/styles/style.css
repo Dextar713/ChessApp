@@ -1,0 +1,108 @@
+:root {
+  --gold: #d4af37; /* Classic gold */
+  --gold-rgb: #d7b640c9; /* Light, bright gold */
+  --rich-gold: #a67c00; /* Richer, deeper gold */
+  --metallic-gold: #d7b740; /* Shiny, metallic gold */
+  --light-gold: #ffd700; /* Light, bright gold */
+  --dark-slate: #2f4f4f; /* Dark slate for contrast and depth */
+  --cream-white: #f5f5dc; /* Creamy white for light backgrounds */
+  --chestnut-brown: #954535; /* Brown reminiscent of a chess board */
+  --onyx-black: #353935; /* Onyx black for text or accents */
+}
+
+body {
+  background-color: var(--onyx-black);
+  color: var(--cream-white);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.header {
+  background-color: var(--gold);
+  color: var(--dark-slate);
+}
+
+.footer {
+  background-color: var(--rich-gold);
+  color: var(--cream-white);
+}
+
+.chessboard {
+  border-color: var(--chestnut-brown);
+}
+
+.square.light {
+  background-color: var(--light-gold);
+}
+
+.square.dark {
+  background-color: var(--chestnut-brown);
+}
+
+.button {
+  background-color: var(--metallic-gold);
+  color: var(--onyx-black);
+}
+.button-dark {
+  background-color: var(--dark-slate);
+  color: var(--cream-white);
+}
+.button-dark:hover {
+  background-color: var(--metallic-gold);
+  color: var(--onyx-black);
+}
+
+.button:hover {
+  background-color: var(--dark-slate);
+  color: var(--cream-white);
+}
+
+hr {
+  border: none;
+  height: 8px;
+  background: var(--light-gold);
+  /* margin-bottom: 50px; */
+}
+.glow-gold{
+    .shadowfilter {
+        -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 247, 0, 0.5));
+         filter: drop-shadow(12px 12px 7px rgba(255, 247, 0, 0.5));
+    }
+}
+.card {
+  margin: 1.8rem;
+  padding: 1.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: var(--gold-rgb);
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+
+  color: var(--dark-slate);
+}
+.mode_btn{
+    text-decoration: none;
+}
+.nav-link{
+    /* make upper case  */
+    text-transform: uppercase;
+    color: var(--cream-white) !important;
+    font-size: 1.3rem !important;
+}
+.nav-link:hover{
+    color: var(--gold) !important;
+}
+footer{
+    width: 100%;
+    color: var(--cream-white);
+    text-align: center;
+}

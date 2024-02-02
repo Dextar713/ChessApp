@@ -1,15 +1,16 @@
 #mynav li a {
-    color: white;
-    font-size: 16px;
+    color: var(--cream-white);
+    font-size: 1.4rem;
 }
-
-body {
-    background-color: #279EFF;
+.navbar-brand{
+    color: var(--light-gold);
+    opacity: 0.8;
+    font-size: 1.7rem;
 }
 
 .game_modes {
     display: flex;
-    background-color: #279EFF;
+    /* background-color: #279EFF; */
     flex-wrap: wrap;
     padding: 10px;
     justify-content: center;
@@ -17,8 +18,7 @@ body {
 }
 
 #game_choice {
-    margin-top: 100px;
-    background-color: #279EFF;
+    height: 70vh;
 }
 
 #game_choice h1 {
@@ -52,11 +52,11 @@ td.field {
 }
 */
 td.white {
-    background-color: white;
+    background-color: var(--light-gold);
 } 
 
 td.black {
-    background-color: burlywood;
+    background-color: var(--chestnut-brown);
 } 
 
 #game {
@@ -137,6 +137,9 @@ td.black {
     font-size: 3vh;
     color: white;
 }
+#log{
+    height: 70vh;
+}
 
 #flash {
     margin-top: 70px;
@@ -158,4 +161,8 @@ td.black {
     list-style: none;
     color: white;
     font-size: 7vh;
+}
+
+#mynav {
+    margin-bottom: 5rem;
 }
