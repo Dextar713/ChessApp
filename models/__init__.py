@@ -1,10 +1,11 @@
 import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from config import SQLALCHEMY_DATABASE_URI
 
 
 class MyDB:
-    DB_URI = "mysql+mysqlconnector://root:abcd7777@localhost:3306/giraffe"
+    DB_URI = SQLALCHEMY_DATABASE_URI
 
     def __init__(self):
         self.Base = sqlalchemy.orm.declarative_base()

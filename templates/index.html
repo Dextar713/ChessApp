@@ -1,21 +1,69 @@
 {% extends "layout.html" %}
 
 {% block head %}
-    {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block navbar %}
-    {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block flash %}
-    {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block content %}
-<section id="log">
-    <div>
-        <h1>Dextar</h1>
+<div class="container mt-5">
+    <div class="row p-5">
+        <div class="d-flex align-items-center">
+            <div class="col-md-6 p-5 align-i" data-aos="fade-right" data-aos-duration="900">
+
+                <h1>Chess of Fortune</h1>
+                <h3>SUCCESS IS LEARNT ♟️</h3>
+                <p>In the multifaceted battle against The Matrix, you begin by becoming as rich as possible.</p>
+                <a class="btn button d-block" href="/play">
+                    <h4>Play NOW</h4>
+                </a>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500">
+                <img src="static/img/chess-pawns.png" alt="">
+            </div>
+        </div>
     </div>
-</section>
+
+    <hr class="m-5">
+
+    <div class="row p-5 d-flex align-items-center m-n3">
+        <div class="col-md-4" data-aos="fade-right" data-aos-duration="1100">
+            <img src="static/img/mini-chess-game.png" class="glow-gold" alt="">
+        </div>
+        <div class="col-md-8 text-center" data-aos="fade-left" data-aos-duration="1300">
+            <h1 class="my-5">Checkmate Tycoon 🏆</h1>
+            <h3>🔰 Conquer with best players</h3>
+            <h3>🔰 Learn best tactics</h3>
+            <h3>🔰 Win biggest prises</h3>
+
+
+        </div>
+    </div>
+    <div class="row p-3 justify-content-center">
+        <div class="col-md-8">
+            <div class="card" data-aos="flip-up" data-aos-duration="900">
+                <!-- <img src="static/img/Chess Pieces/BlackQueen.png" class="card-img-top" alt="..."> -->
+                <h1>CONNECT WITH
+                    AMBITIOUS PLAYERS</h1>
+                <p>Society is influencing you for society's well being.</p>
+                <p>They don't want you to be free, they want slaves who work, consume and die.</p>
+                <p><b>Here you will learn the truth about life.</b></p>
+                <p>Here you will learn how to become free.</p>
+                <a class="btn button-dark d-block" href="/register">
+                    <h3>Register</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
 {% endblock %}
