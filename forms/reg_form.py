@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, validators, EmailField
+from wtforms import StringField, SubmitField, validators, EmailField, PasswordField
 
 
 class RegForm(FlaskForm):
@@ -7,6 +7,6 @@ class RegForm(FlaskForm):
                                                   validators.Email()])
     username = StringField(label='Username', validators=[validators.Length(max=30),
                                                          validators.DataRequired('Enter your username')])
-    password = StringField(label='Password', validators=[validators.Length(min=5),
+    password = PasswordField(label='Password', validators=[validators.Length(min=5),
                                                          validators.DataRequired('Enter your password')])
     submit = SubmitField('Submit')

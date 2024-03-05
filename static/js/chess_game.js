@@ -81,7 +81,9 @@ $("document").ready(function() {
                     }
                     if(data.game_over) {
                         game_over = true;
-                        //data.winner;
+                        const msg = $(".timer_field > h2");
+                        msg.text(data.winner + " wins!");
+                        clearInterval(interval);
                     }
                     set_drag();
                 })
@@ -170,6 +172,7 @@ $("document").ready(function() {
             clearInterval(interval);
         }
         if(time_expired) {
+            console.log('Expired');
             fetch(`${window.origin}/game`, {
                 method: 'post',
                 credentials: 'include',
@@ -181,9 +184,11 @@ $("document").ready(function() {
                     'content-type': "application/json"
                 })
             })
-            .then(respnse => response.json())
+            .then(response => response.json())
             .then(data => {
-                alert(data.winner);
+                const msg = $(".timer_field > h2");
+                msg.text(data.winner + " wins!");
+                clearInterval(interval);
             })
         }
     };

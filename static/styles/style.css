@@ -106,3 +106,9 @@ footer{
     color: var(--cream-white);
     text-align: center;
 }
+
+.timer_field {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
